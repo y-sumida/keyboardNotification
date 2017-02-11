@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7Q-7D-cVR">
-                                                <rect key="frame" x="20" y="494" width="560" height="30"/>
+                                                <rect key="frame" x="20" y="550" width="560" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -33,7 +33,7 @@
                                         <constraints>
                                             <constraint firstItem="Y7Q-7D-cVR" firstAttribute="leading" secondItem="lo0-dA-Cc9" secondAttribute="leading" constant="20" id="4x3-Pc-5IK"/>
                                             <constraint firstItem="Y7Q-7D-cVR" firstAttribute="centerX" secondItem="lo0-dA-Cc9" secondAttribute="centerX" id="K31-pL-3Z3"/>
-                                            <constraint firstAttribute="bottom" secondItem="Y7Q-7D-cVR" secondAttribute="bottom" constant="56" id="RKp-uD-qtO"/>
+                                            <constraint firstAttribute="bottom" secondItem="Y7Q-7D-cVR" secondAttribute="bottom" id="RKp-uD-qtO"/>
                                             <constraint firstAttribute="trailing" secondItem="Y7Q-7D-cVR" secondAttribute="trailing" constant="20" id="ts4-Ku-Kdq"/>
                                         </constraints>
                                     </view>
@@ -56,6 +56,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ln5-n8-tl6" secondAttribute="bottom" id="dWN-sH-HO4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Ln5-n8-tl6" id="c7u-Ls-JD9"/>
+                        <outlet property="textField" destination="Y7Q-7D-cVR" id="IRV-JA-y8w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
