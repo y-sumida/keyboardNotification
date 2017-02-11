@@ -71,7 +71,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let contentInsets = UIEdgeInsetsMake(0, 0, moveSize, 0)
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = contentInsets
-        scrollView.contentOffset = CGPointMake(0, moveSize)
+        //scrollView.contentOffset = CGPointMake(0,  moveSize)
+        // Memo textField自体がスクロールして位置が変わる場合はこうしないとだめ
+        scrollView.contentOffset = CGPointMake(0, scrollView.contentOffset.y + moveSize)
         
         UIView.commitAnimations()
     }
